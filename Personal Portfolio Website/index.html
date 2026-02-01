@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Top Menu Bar -->
+    <header class="header">
+      <a href="#" class="title"> Portfolio </a>
+
+      <nav class="navbar">
+        <a href="#top" class="active">Home</a>
+        <a href="#aboutme">About</a>
+        <a href="#myskills">Skills</a>
+        <a href="#contactme">Contact Me</a>
+      </nav>
+    </header>
+
+    <!-- Section of Home Class -->
+
+    <section class="top" id="top">
+      <div class="topcontent">
+        <h3>Hello, It's Me</h3>
+        <h1>Ritik</h1>
+        <h3>And I'm a <span>Student</span></h3>
+        <p>
+          This is my first website, designed  and developed as part of my Website
+          Technology module project. The purpose of this project is to apply the
+          fundamental concepts of web design and development using HTML, CSS,
+          and JavaScript.
+        </p>
+
+      </div>
+      <div class="topimg">
+        <div class="glow-circle">
+          <img src="profile_image.jpg" alt="Profile" />
+        </div>
+      </div>
+    </section>
+
+    <!-- This is the About  Me Section -->
+
+    <section class="aboutme" id="aboutme">
+      <h2>About <span>Me</span></h2>
+      <p>
+        I am an MSc Computer Science student at the University of Law. This
+        website is my project for the Web Technologies module. Through this
+        project, I show my understanding of web development concepts,
+        which include HTML, CSS, and JavaScript. This Personal Portfolio website shows my skills in
+        frontend design, responsive layouts, and user-friendly interfaces, which
+        I have developed during my module.
+      </p>
+
+    </section>
+
+<!-- My Services Section -->
+
+<section class="myskills" id="myskills">
+      <h2 class="heading">My <span>Skills and Learning </span></h2>
+
+      <div class="myskillscontainer">
+        <div class="myskillsbox">
+          <h3> Software Development </h3>
+          <p>
+
+            Completed a software development module which covers fundamentals of Python Programming, Software Development Life Cycle and Software Versioning.
+
+          </p>
+        </div>
+
+        <div class="myskillsbox">
+          <h3>Web Design</h3>
+          <p>
+Building responsive website using HTML, CSS, and Javascipt          </p>
+        </div>
+
+        <div class="myskillsbox">
+          <h3> Database Management Technologies </h3>
+          <p>
+Upcoming module focused on data storage, Database, and data handling concepts.        </div>
+      </div>
+    </section>
+
+     <!-- Contact Me Section -->
+
+      <section class="contactme" id="contactme">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contactcontainer">
+            <div class="contactform">
+                <form onsubmit="return data()">
+          <input type="text" placeholder="Enter Your Name" id="n1" />
+          <input type="email" placeholder="Enter Your Email" id="n2" />
+          <input type="text" placeholder="Enter Your Subject" id="n3" />
+          <textarea placeholder="Enter Your Message" id="n4"></textarea>
+
+          <button type="submit">Submit</button>
+
+          <!-- Message will appear here -->
+          <p id="msg"></p>
+        </form>
+
+            </div>
+        </div>
+    </section>
+
+   
+ 
+
+   
+ <!-- Javascipt form validation  -->
+
+  <script>
+    // function runs when the user clicks "Submit"
+    function data() {
+
+      // Get values from inputs
+      var a = document.getElementById("n1").value;
+      var b = document.getElementById("n2").value;
+      var c = document.getElementById("n3").value;
+      var d = document.getElementById("n4").value;
+
+
+      // If box is empty, show alert
+      if (a === "" || b === "" || c === "" || d === "") {
+        alert("All fields are required to submit the form");
+        msg.innerHTML = ""; // clear message
+        return false; // stop refresh
+      }
+
+      // show alert when click on submit button
+      alert ("Thank you for contacting us");
+
+      // Stop the page refreshing
+      return false;
+    }
+    </script>
+
+   <footer class="footer">
+   <p> &copy; 2025 webtechnologiesproject.com All rights reserved.</p>  <!-- Copywright Symbol -->
+  </footer>
+  </body>
+    </html>
+    

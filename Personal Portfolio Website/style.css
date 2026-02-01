@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page Background and colour */
+
+body {
+    background: #031a2f;
+    color: white;
+}
+
+/* Header */
+
+.header {
+    position: fixed; /* keep header on top  */
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background: transparent;
+   display: flex;            /* align logo and menu   */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* stay above all sections   */ 
+}
+
+/* Text for Logo */
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* Links Navigation Bar */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: .3s;  /* Create hover effect   */
+}
+
+/* Hover and active menu color */
+
+.navbar a:hover,
+.navbar a.active {
+    color: cyan;
+}
+
+/* Section for Home  */
+
+.top {
+    width: 100%; /* Take full screen height   */
+    height: 100vh;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Home Text Content */
+
+.topcontent {
+    max-width: 550px;  
+}
+
+.top h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.top h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* Highlight Text */
+
+.topcontent h3 span {
+    color: cyan;
+}
+
+/* Text Paragraph */
+
+.topcontent p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* My services section */
+
+.service-box {
+    background: #041c2c;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.2);
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    border-color: cyan;
+    box-shadow: 0 0 35px rgba(0, 238, 255, 0.6);
+}
+
+
+/* Glowing circle around image */
+
+.topimg .glow-circle {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00f7ff, #ff00d4, #00f7ff);
+}
+
+/* Profile image */
+
+.topimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+
+/* About Me Section */
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+flex-direction: column;  /* For Vertical text   */
+    height: 100vh;
+    color: white;
+    padding: 40px 20px;
+}
+
+.aboutme h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.aboutme h2 span {
+        color: cyan;
+
+}
+
+
+.aboutme p {
+    font-size: 21px;
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 23px;    
+    justify-content: center;
+}
+
+
+/* My skills and leaning */
+
+.myskills {
+    padding: 80px 8%;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.myskills .heading {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.myskills .heading span {
+    color: cyan;
+}
+
+.myskillscontainer {
+    display: grid;   /* makes a grid */
+    gap: 30px;       /* space between items */
+}
+
+
+/* Service Box */
+
+.myskillsbox {
+    background: #041c2c;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.2); /* Creates box shadow    */
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.myskillsbox:hover {
+    
+    border-color: cyan;
+    box-shadow: 0 0 35px rgba(0, 238, 255, 0.6)  /* Glow effect on hover (reference: W3Schools) */
+}
+
+/* Icons of Service Section*/
+.myskillsbox i {
+    font-size: 40px;
+    color: cyan;
+    margin-bottom: 15px;
+}
+
+/* Text for Service Section */
+.myskillsbox h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.myskillsbox p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Me Section */
+
+.contactme { padding: 80px 8% 150px;} /* Add Space before footer Reference: (MDN Web Docs)*/
+
+.contactme .heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contactme .heading span {
+    color: #0ef;
+}
+
+    /* Container */
+        .contactcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contact form */
+        .contactform {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contactform input,
+        .contactform textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #4a4a4a;
+            color: white;
+            font-size: 14px;
+        }
+
+        .contactform textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        /* Contact form Button */
+        .contactform button {
+            width: 100%;
+            padding: 14px;
+            background: #0ef;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .contactform button:hover {
+            background: #00c2cc;
+        }
+/* Footer Section */
+
+footer {
+    background-color: #031a2f; 
+    padding: 15px 0;           /* Space inside the box */
+}
+
+footer p {
+    text-align: center;        
+    color: #ffffff;            
+    font-size: 14px;
+    margin: 0;                 /* Remove default paragraph margin */
+}
