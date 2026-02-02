@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Coffee in Leeds</title>
+
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <header>
+      <div class="navbar">
+        <!-- Logo -->
+        <div class="logo"> <span>Coffee Hub</span></div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#specials">Speciality</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#menusection">Menu</a></li>
+          <li><a href="#contactus">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Top Section -->
+    <section class="top">
+      <!-- Top cofee Image -->
+      <img src="coffee.jpg" alt="Coffee shop in Leeds" class="topimage" />
+
+      <!-- Text -->
+      <div class="toptext">
+        <h1>Good Coffee. Good Moments.</h1>
+
+        <p>Fresh coffee and a cozy place to relax in Leeds.</p>
+
+        <!-- Button -->
+        <a href="#story" class="btn"> Our Story</a>
+      </div>
+    </section>
+
+    <!-- Our Speaciality Section -->
+    <section class="specials" id="specials">
+      <!-- Section Heading -->
+     <h2 class="heading">Our <span>Speciality</span></h2> 
+
+      <!-- Specials Items -->
+
+      <div class="specialbox">
+        <!-- Item 1 -->
+
+        <div class="specialitem">
+          <img src="latte.jpg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>
+            Smooth and creamy coffee made with rich espresso and steamed milk.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="specialitem">
+          <img src="espresso.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>Strong and bold coffee made from finely ground roasted beans.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="specialitem">
+          <img src="americano.jpg" alt="Americano" />
+          <h3>Americano</h3>
+          <p>A light black coffee made by adding hot water to espresso.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+
+    <section id="story" class="story">
+      <!-- Section Title -->
+     <h2 class="heading">Our <span>Story</span></h2> 
+
+      <!-- Content -->
+      <div class="storybox">
+        <!-- Left Image -->
+        <div class="storyimage">
+          <img src="storyimage.jpg" alt="Story image" />
+        </div>
+
+        <!-- Right Text -->
+        <div class="storytext">
+          <h3>About Coffee Shop</h3>
+
+          <p>
+            Our coffee shop is a warm and friendly place in the heart of Leeds.
+            We serve fresh, high-quality coffee made with care and passion. <br>
+            Since 2026, we have been welcoming people to relax, meet friends,
+            and enjoy great coffee in a cozy atmosphere. Every cup is prepared
+            to give you comfort, quality, and a moment to slow down and enjoy.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">t</a>
+            <a href="#">i</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+
+<section id="menusection" class="menusection">
+
+  <!-- Menu Title -->
+  <h2>Menu</h2>
+
+  <!-- Menu Items -->
+  <div class="menubox">
+
+    <!-- Left Column -->
+    <div class="menucol">
+
+      <div class="menuitem">
+        <img src="americano.jpg" alt="Americano">
+        <div class="menu-text">
+          <h3>Americano <span>5.5$</span></h3>
+          <p>Fresh espresso with hot water for a smooth taste.</p>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="icedcoffees" alt="Iced Coffees">
+        <div class="menu-text">
+          <h3> Iced Coffee <span>6.6$</span></h3>
+          <p>Rich and creamy chocolate drink.</p>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="americano.jpg" alt="Double Americano">
+        <div class="menu-text">
+          <h3>Double Americano <span>  4.5$</span></h3>
+          <p>Extra strong coffee for coffee lovers.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="menu-column">
+
+      <div class="menuitem">
+        <img src="latte.jpg" alt="Latte">
+        <div class="menu-text">
+          <h3>Latte <span>6.6$</span></h3>
+          <p>Espresso mixed with steamed milk and foam.</p>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="latte.jpg" alt="Mocha">
+        <div class="menu-text">
+          <h3>Mocha <span>4.5$</span></h3>
+          <p>Bold black coffee with a rich aroma.</p>
+        </div>
+      </div>
+
+      <div class="menuitem">
+        <img src="icedoffee.jpg" alt="Cappuccino">
+        <div class="menu-text">
+          <h3>Cappuccino <span>3$</span></h3>
+          <p>Perfect balance of espresso, milk, and foam.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Contact Us Section -->
+ 
+<section class="contactus" id="contactus">
+     <h2 class="heading">Contact <span>Us</span></h2> 
+
+     <div class="contactbox"> 
+        <div class="contactform">
+             <form onsubmit="return data()"> 
+                <input type="text" placeholder="Enter Your Name" id="name" /> 
+                <input type="email" placeholder="Enter Your Email" id="email" /> 
+                <input type="text" placeholder="Enter Your Subject" id="subject" />
+                 <textarea placeholder="Yor Query" id="msg"></textarea> 
+                 <button type="submit">Submit</button> </form> </div> </div> </section> 
+                 <!-- Javascipt form validation -->
+                   <script>
+                   
+                //    function runs when the user clicks "Submit"
+                   function data() {
+
+      // Get values from inputs
+      var a = document.getElementById("name").value;
+      var b = document.getElementById("email").value;
+      var c = document.getElementById("subject").value;
+      var d = document.getElementById("msg").value;
+
+
+      // If box is empty, show alert
+      if (a === "" || b === "" || c === "" || d === "") {
+        alert("All fields are required to submit the form");
+        msg.innerHTML = ""; // clear message
+        return false; // stop refresh
+      }
+
+      // show alert when click on submit button
+      alert ("Thank you for contacting us");
+
+      // Stop the page refreshing
+      return false;
+    }
+</script>
+
+<!-- Footer Section -->
+
+<footer class="footer">
+
+  <div class="footerbox">
+    <div class="footerleft">
+      <h2>Coffee Hub</h2> <br>
+      <p>A cozy coffee shop in Leeds, serving quality coffee since 2026.</p>
+    </div>
+
+    <div class="footerrig">
+      <h2>Quick Links</h2> <br>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#specials">Speciality</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#menusection">Menu</a></li>
+        <li><a href="#contactus">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footerbottom">
+    <p>@ 2026 Coffee Hub | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+
+
+  </body>
+</html>
