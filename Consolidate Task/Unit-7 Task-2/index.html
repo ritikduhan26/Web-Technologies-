@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 7 Task 2</title>
+</head>
+<body>
+<h2> Ajax and Javascript to load meassage  </h2>
+
+</body>
+<button onclick="loadData()">Load Message</button>
+
+<div id="result"></div>
+<script>
+function loadData() {
+    fetch("data.txt.txt")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("result").innerHTML = data;
+        });
+}
+</script>
+
+</html>
