@@ -202,7 +202,7 @@ flex-direction: column;  /* For Vertical text   */
 .myskillsbox:hover {
     
     border-color: cyan;
-    box-shadow: 0 0 35px rgba(0, 238, 255, 0.6)  /* Glow effect on hover (reference: W3Schools) */
+    box-shadow: 0 0 35px rgba(0, 238, 255, 0.6)  
 }
 
 /* Icons of Service Section*/
@@ -227,7 +227,7 @@ flex-direction: column;  /* For Vertical text   */
 
 /* Contact Me Section */
 
-.contactme { padding: 80px 8% 150px;} /* Add Space before footer Reference: (MDN Web Docs)*/
+.contactme { padding: 80px 8% 150px;}
 
 .contactme .heading {
     text-align: center;
@@ -299,3 +299,4 @@ footer p {
     font-size: 14px;
     margin: 0;                 /* Remove default paragraph margin */
 }
+
