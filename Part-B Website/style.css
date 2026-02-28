@@ -36,7 +36,7 @@ header {
   color: #a6be76;
 }
 
-/* ===== Menu ===== */
+/* Menu */
 .menu {
   list-style: none;
   display: flex;
@@ -388,4 +388,5 @@ header {
   background: #111;
   padding: 20px;
   font-size: 14px;
+
 }
